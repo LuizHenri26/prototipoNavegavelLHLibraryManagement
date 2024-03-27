@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Consulta Usuários - LH Library Manager</title>
+    <title>Consulta Usuários - LH Library Management</title>
   </head>
 
   <body>
@@ -19,20 +19,14 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="inicio.html">LH Library Manager</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="inicio.html" class="sidebar-link">
-              <i class="lni lni-home"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="sidebar-item">
             <a href="cadastrarUsuario.html" class="sidebar-link">
               <i class="lni lni-user"></i>
-              <span>Cadastrar Usuário</span>
+              <span>Cadastrar Usuários</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -72,7 +66,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="entrar.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="lni lni-power-switch"></i>
               <span>Sair</span>
             </a>
@@ -97,16 +91,16 @@
                         type="text"
                         class="form-control"
                         id="inputNome"
-                        placeholder="Digite o nome do Usuário"
+                        placeholder="Digite o nome do usuário"
                       />
                     </div>
                     <div class="col">
-                      <label for="inputAutor" class="form-label">Email</label>
+                      <label for="inputAutor" class="form-label">Login</label>
                       <input
                         type="text"
                         class="form-control"
                         id="inputAutor"
-                        placeholder="Digite o e-mail do usuário"
+                        placeholder="Digite o nome do login"
                       />
                     </div>
                   </div>
@@ -125,42 +119,36 @@
             >
               <tr class="table-blue table-active text-uppercase">
                 <th>Nome</th>
-                <th>Email</th>
+                <th>Login</th>
                 <th>Perfil</th>
                 <th>Ação</th>
               </tr>
               <tr>
                 <td>Luiz Henrique</td>
-                <td>administrador@teste.com</td>
-                <td>Administrador</td>
+                <td>lhsousa</td>
+                <td>Funcionário</td>
                 <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="EditarUsuario.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt="" /></a
-                  ><a href="./" data-buttonTrash
+                <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
                 </th>
               </tr>
               <tr>
                 <td>José Hugo</td>
-                <td>josehugo@teste.com</td>
+                <td>jhugo</td>
                 <td>Funcionario</td>
                 <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="EditarUsuario.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt="" /></a
-                  ><a href="./" data-buttonTrash
+                <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
                 </th>
               </tr>
               <tr>
                 <td>Leon</td>
-                <td>leon@teste.com</td>
+                <td>leon</td>
                 <td>Funcionario</td>
                 <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="EditarUsuario.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt="" /></a
-                  ><a href="./" data-buttonTrash
+                  <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
                 </th>

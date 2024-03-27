@@ -19,20 +19,14 @@
           <i class="lni lni-grid-alt"></i>
         </button>
         <div class="sidebar-logo">
-          <a href="inicio.html">LH Library Manager</a>
+          <a href="cadastrarCategorias.html">LH Library Management</a>
         </div>
       </div>
       <ul class="sidebar-nav">
         <li class="sidebar-item">
-          <a href="inicio.html" class="sidebar-link">
-            <i class="lni lni-home"></i>
-            <span>Inicio</span>
-          </a>
-        </li>
-        <li class="sidebar-item">
           <a href="cadastrarUsuario.html" class="sidebar-link">
             <i class="lni lni-user"></i>
-            <span>Cadastrar Usuário</span>
+            <span>Cadastrar Usuários</span>
           </a>
         </li>
         <li class="sidebar-item">
@@ -50,7 +44,7 @@
         <li class="sidebar-item">
           <a href="consultaCategorias.html" class="sidebar-link">
             <i class="lni lni-search-alt"></i>
-            <span>Consultar Categoria</span>
+            <span>Consulta Categorias</span>
           </a>
         </li>
         <li class="sidebar-item">
@@ -72,7 +66,7 @@
           </a>
         </li>
         <li class="sidebar-item">
-          <a href="entrar.html" class="sidebar-link">
+          <a href="index.html" class="sidebar-link">
             <i class="lni lni-power-switch"></i>
             <span>Sair</span>
           </a>
@@ -82,7 +76,7 @@
 
     <div class="main p-3">
       <section class="d-block">
-        <h1 class="m-3 fs-1 roboto-bold"> <span><img src="img/register-svgrepo-com.svg" alt=""></span> Consultar Categoria</h1>
+        <h1 class="m-3 fs-1 roboto-bold"> <span><img src="img/register-svgrepo-com.svg" alt=""></span> Consulta Categorias</h1>
         <div class="container p-4 mt-2 ">
           <div class="row">
             <div class="col-md-6 bg-light p-4 shadow">
@@ -91,6 +85,7 @@
                   <div class="col-9">
                     <label for="inputNome" class="form-label">Nome da Categoria</label>
                     <input type="text" class="form-control" id="inputCategoria" placeholder="Digite o nome da categoria">
+                  </div>
                   </div>
                   <button type="submit" class="btn btn-primary align-self-end ms-2 mt-2">Procurar</button>
               </form>
@@ -108,7 +103,12 @@
             </tr>
             <tr>
               <td>1</td>
-              <td>John</td>
+              <td>Drama</td>
+              <th class="d-flex align-center justify-content-center gap-2"><a href="editarCategoria.html" data-buttonEdit><img src="img/edit.svg" alt=""></a><a href="./" data-buttonTrash><img src="img/trash.svg" alt=""></a></th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ação</td>
               <th class="d-flex align-center justify-content-center gap-2"><a href="editarCategoria.html" data-buttonEdit><img src="img/edit.svg" alt=""></a><a href="./" data-buttonTrash><img src="img/trash.svg" alt=""></a></th>
             </tr>
           </table>

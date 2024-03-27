@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Cadastrar Usuário - LH Library Manager</title>
+    <title>Cadastrar Usuários - LH Library Management</title>
   </head>
 
   <body>
@@ -19,20 +19,14 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="inicio.html">LH Library Manager</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="inicio.html" class="sidebar-link">
-              <i class="lni lni-home"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
-          <li class="sidebar-item">
             <a href="cadastrarUsuario.html" class="sidebar-link">
               <i class="lni lni-user"></i>
-              <span>Cadastrar Usuário</span>
+              <span>Cadastrar Usuários</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -72,7 +66,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="entrar.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="lni lni-power-switch"></i>
               <span>Sair</span>
             </a>
@@ -84,14 +78,14 @@
         <section class="d-block">
           <h1 class="m-3 fs-1 roboto-bold">
             <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
-            Cadastrar Usuário
+            Cadastrar Usuários
           </h1>
           <div class="container p-4 mt-2">
             <div class="row">
               <div class="col-md-6 bg-light shadow p-4 mb-5">
                 <form>
                   <div class="mb-3">
-                    <label for="inputNomeUsuario" class="form-label">Nome</label>
+                    <label for="inputNomeUsuario" class="form-label">Nome *</label>
                     <input
                       type="text"
                       class="form-control"
@@ -101,18 +95,18 @@
                   </div>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputEmailUsuario" class="form-label">Email</label>
+                      <label for="inputEmailUsuario" class="form-label">Login *</label>
                       <input
                         type="text"
                         class="form-control"
                         id="inputEmailUsuario"
-                        placeholder="Digite o e-mail do usuário"
+                        placeholder="Digite o login do usuário"
                       />
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputSenhaUsuario" class="form-label">Senha</label>
+                      <label for="inputSenhaUsuario" class="form-label">Senha *</label>
                       <input
                         type="password"
                         class="form-control"
@@ -120,16 +114,6 @@
                         placeholder="Digite a senha do usuário"
                       />
                     </div>
-                  </div>
-                  <div class="col mb-2">
-                    <label for="inputUsuarioPerfil" class="form-label"
-                      >Perfil</label
-                    >
-                    <select class="form-select" id="inputUsuarioPerfil">
-                      <option selected>Escolha Tipo de Perfil do Usuário</option>
-                      <option value="1">Administrador</option>
-                      <option value="2">Funcionário</option>
-                    </select>
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Cadastrar
