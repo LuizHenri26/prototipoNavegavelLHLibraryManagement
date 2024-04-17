@@ -36,15 +36,15 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="cadastrarCategorias.html" class="sidebar-link">
-              <i class="lni lni-tab"></i>
-              <span>Cadastrar Categorias</span>
+            <a href="cadastrarMembros.html" class="sidebar-link">
+              <i class="lni lni-customer"></i>
+              <span>Cadastrar Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="consultaCategorias.html" class="sidebar-link">
+            <a href="consultaMembros.html" class="sidebar-link">
               <i class="lni lni-search-alt"></i>
-              <span>Consulta Categorias</span>
+              <span>Consulta Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -63,6 +63,12 @@
             <a href="registrarEmprestimo.html" class="sidebar-link">
               <i class="lni lni-agenda"></i>
               <span>Registrar Empréstimo</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="registrarDevolucao.html" class="sidebar-link">
+              <i class="lni lni-layout"></i>
+              <span>Registrar Devolução</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -94,15 +100,6 @@
                         placeholder="Digite o nome do usuário"
                       />
                     </div>
-                    <div class="col">
-                      <label for="inputAutor" class="form-label">Login</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputAutor"
-                        placeholder="Digite o nome do login"
-                      />
-                    </div>
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Procurar
@@ -124,34 +121,56 @@
                 <th>Ação</th>
               </tr>
               <tr>
-                <td>Luiz Henrique</td>
-                <td>lhsousa</td>
-                <td>Funcionário</td>
-                <th class="d-flex align-center justify-content-center gap-2">
+                <td>Toni Lucas</td>
+                <td>admin</td>
+                <td>Administrador</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarUsuario.html" data-buttonEdit
+                  ><img src="img/edit.svg" alt=""
+                /></a>
                 <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
-                </th>
+                </td>
+              </tr>
+              <tr>
+                <td>Luiz Henrique</td>
+                <td>lhsousa</td>
+                <td>Funcionário</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarUsuario.html" data-buttonEdit
+                  ><img src="img/edit.svg" alt=""
+                /></a>
+                <a href="./" data-buttonTrash
+                    ><img src="img/trash.svg" alt=""
+                  /></a>
+                </td>
               </tr>
               <tr>
                 <td>José Hugo</td>
                 <td>jhugo</td>
-                <td>Funcionario</td>
-                <th class="d-flex align-center justify-content-center gap-2">
+                <td>Funcionário</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarUsuario.html" data-buttonEdit
+                  ><img src="img/edit.svg" alt=""
+                /></a>
                 <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
-                </th>
+                </td>
               </tr>
               <tr>
                 <td>Leon</td>
                 <td>leon</td>
-                <td>Funcionario</td>
-                <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="./" data-buttonTrash
+                <td>Funcionário</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarUsuario.html" data-buttonEdit
+                  ><img src="img/edit.svg" alt=""
+                /></a>
+                <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
-                </th>
+                </td>
               </tr>
             </table>
           </div>

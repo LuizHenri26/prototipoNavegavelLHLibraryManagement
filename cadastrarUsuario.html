@@ -36,15 +36,15 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="cadastrarCategorias.html" class="sidebar-link">
-              <i class="lni lni-tab"></i>
-              <span>Cadastrar Categorias</span>
+            <a href="cadastrarMembros.html" class="sidebar-link">
+              <i class="lni lni-customer"></i>
+              <span>Cadastrar Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="consultaCategorias.html" class="sidebar-link">
+            <a href="consultaMembros.html" class="sidebar-link">
               <i class="lni lni-search-alt"></i>
-              <span>Consulta Categorias</span>
+              <span>Consulta Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -63,6 +63,12 @@
             <a href="registrarEmprestimo.html" class="sidebar-link">
               <i class="lni lni-agenda"></i>
               <span>Registrar Empréstimo</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="registrarDevolucao.html" class="sidebar-link">
+              <i class="lni lni-layout"></i>
+              <span>Registrar Devolução</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -94,7 +100,7 @@
                     />
                   </div>
                   <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-sm">
                       <label for="inputEmailUsuario" class="form-label">Login *</label>
                       <input
                         type="text"
@@ -103,9 +109,7 @@
                         placeholder="Digite o login do usuário"
                       />
                     </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-sm">
                       <label for="inputSenhaUsuario" class="form-label">Senha *</label>
                       <input
                         type="password"
@@ -114,6 +118,15 @@
                         placeholder="Digite a senha do usuário"
                       />
                     </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPerfil" class="form-label"
+                      >Perfil</label
+                    >
+                    <select class="form-select" id="inputPerfil">
+                      <option value="1">Administrador</option>
+                      <option value="2">Funcionario</option>
+                    </select>
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Cadastrar

@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Consulta Livros - LH Library Management</title>
+    <title>Editar Usuário - LH Library Management</title>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="consultaMembros.html">LH Library Management</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
@@ -84,83 +84,56 @@
         <section class="d-block">
           <h1 class="m-3 fs-1 roboto-bold">
             <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
-            Consulta Livros
+            Editar Usuário
           </h1>
           <div class="container p-4 mt-2">
             <div class="row">
-              <div class="col-md-6 bg-light p-4 shadow">
-                <form>
+              <div class="col-md-6 bg-light shadow p-4 mb-5">
+                <form action="consultarUsuarios.html">
+                  <div class="mb-3">
+                    <label for="inputNomeUsuario" class="form-label">Nome *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputNomeUsuario"
+                      placeholder="Digite o nome do usuário"
+                    />
+                  </div>
                   <div class="row mb-3">
-                    <div class="col">
-                      <label for="inputNomeLivro" class="form-label"
-                        >Titulo do Livro</label
-                      >
+                    <div class="col-sm">
+                      <label for="inputEmailUsuario" class="form-label">Login *</label>
                       <input
                         type="text"
                         class="form-control"
-                        id="inputNome"
-                        placeholder="Digite o titulo do livro"
+                        id="inputEmailUsuario"
+                        placeholder="Digite o login do usuário"
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <label for="inputSenhaUsuario" class="form-label">Senha *</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputSenhaUsuario"
+                        placeholder="Digite a senha do usuário"
                       />
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">
-                    Procurar
+                  <div class="mb-3">
+                    <label for="inputPerfil" class="form-label"
+                      >Perfil</label
+                    >
+                    <select class="form-select" id="inputPerfil">
+                      <option value="1">Administrador</option>
+                      <option value="2">Funcionario</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary" onclick="navegarParaUrlConsultaUsuarios();">
+                    Atualizar
                   </button>
                 </form>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="d-flex container-sm flex-column">
-          <div class="table-wrapper">
-            <table
-              class="table table-bordered  table-responsive table-bordered text-center container-sm p-4 mt-2"
-            >
-              <tr class="table-blue table-active text-uppercase">
-                <th>Categoria</th>
-                <th>Titulo do Livro</th>
-                <th>Autor</th>
-                <th>Editora</th>
-                <th>Idioma</th>
-                <th>Setor</th>
-                <th>Status</th>
-                <th>Ação</th>
-              </tr>
-              <tr>
-                <td>Tecnologia</td>
-                <td>Spring Boot</td>
-                <td>Fernando Boaglio</td>
-                <td>Casa do Código</td>
-                <td>Português-BR</td>
-                <td>Setor A - Inferior</td>
-                <td>Disponível</td>
-                <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt=""
-                  /></a>
-                  <a href="./" data-buttonTrash
-                    ><img src="img/trash.svg" alt=""
-                  /></a>
-                </th>
-              </tr>
-              <tr>
-                <td>Tecnologia</td>
-                <td>Teoria dos grafos</td>
-                <td>João Paulo Maida</td>
-                <td>Casa do Código</td>
-                <td>Português-BR</td>
-                <td>Setor A - Superior</td>
-                <td>Emprestado</td>
-                <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt=""
-                  /></a>
-                  <a href="./" data-buttonTrash
-                    ><img src="img/trash.svg" alt=""
-                  /></a>
-                </th>
-              </tr>
-            </table>
           </div>
         </section>
       </div>

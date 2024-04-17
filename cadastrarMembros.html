@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Cadastrar Livros - LH Library Management</title>
+    <title>Cadastrar Livros - LH Library Manager</title>
   </head>
 
   <body>
@@ -84,88 +84,146 @@
         <section class="d-block">
           <h1 class="m-3 fs-1 roboto-bold">
             <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
-            Cadastrar Livros
+            Cadastrar Membros
           </h1>
           <div class="container p-4 mt-2">
             <div class="row">
               <div class="col-md-6 bg-light shadow p-4 mb-5">
                 <form>
-                  <div class="mb-3">
-                    <label for="inputTitulo" class="form-label"
-                      >Título do Livro *</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputTitulo"
-                      placeholder="Digite o título do livro"
-                    />
-                  </div>
                   <div class="row mb-3">
-                    <div class="col-sm">
-                      <label for="inputCategoria" class="form-label"
-                        >Categoria</label
-                      >
-                      <select class="form-select" id="inputCategoria">
-                        <option value="1">Ficção</option>
-                        <option value="2">Não-ficção</option>
-                        <option value="3">Romance</option>
-                        <option value="4">Mistério</option>
-                        <option value="5">Biografia</option>
-                        <option value="6">História</option>
-                        <option value="7">Ciência</option>
-                      </select>
-                    </div>
-                    <div class="col-sm">
-                      <label for="inputTitulo" class="form-label">ISBN *</label>
+                    <div class="col">
+                      <label for="inputMembro" class="form-label">Nome *</label>
                       <input
                         type="text"
                         class="form-control"
-                        id="inputTitulo"
-                        placeholder="Digite o numero do isbn"
+                        id="inputMembro"
+                        placeholder="Digite o nome do membro"
+                        maxlength="65"
                       />
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm">
-                      <label for="inputAutor" class="form-label">Autor *</label>
+                      <label for="inputCPF" class="form-label">CPF *</label>
                       <input
                         type="text"
                         class="form-control"
-                        id="inputAutor"
-                        placeholder="Digite o nome do autor"
+                        id="inputCPF"
+                        placeholder="Digite o numero do CPF"
+                        maxlength="14"
                       />
                     </div>
                     <div class="col-sm">
-                      <label for="inputEditora" class="form-label"
-                        >Editora *</label
+                      <label for="inputDataNascimento" class="form-label"
+                        >Data de Nascimento *</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="inputEditora"
-                        placeholder="Digite o nome da editora"
+                        id="inputDataNascimento"
+                        placeholder="Digite a data de nascimento"
+                        maxlength="10"
                       />
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm">
-                      <label for="inputIdiomaLivro" class="form-label"
-                        >Idioma</label
+                      <label for="inputLogradouro" class="form-label"
+                        >Logradouro *</label
                       >
-                      <select class="form-select" id="inputIdiomaLivro">
-                        <option value="1">Português-BR</option>
-                        <option value="2">Inglês-US</option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputLogradouro"
+                        placeholder="Digite o Logradouro"
+                        maxlength="65"
+                      />
                     </div>
                     <div class="col-sm">
-                      <label for="inputSetorLivro" class="form-label"
-                        >Setor</label
+                      <label for="inputNumero" class="form-label"
+                        >Numero *</label
                       >
-                      <select class="form-select" id="inputSetorLivro">
-                        <option value="1">Setor A - Inferior</option>
-                        <option value="2">Setor A - Superior</option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputNumero"
+                        placeholder="Digite o numero da casa"
+                        maxlength="20"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm">
+                      <label for="inputCEP" class="form-label">CEP *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputCEP"
+                        placeholder="Digite o numero do CEP"
+                        maxlength="10"
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <label for="inputComplemento" class="form-label"
+                        >Complemento</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputComplemento"
+                        placeholder="Digite o complemento"
+                        maxlength="30"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm">
+                      <label for="inputCidade" class="form-label"
+                        >Cidade *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputCidade"
+                        placeholder="Digite o nome da cidade"
+                        maxlength="65"
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <label for="inputEstado" class="form-label"
+                        >Estado *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputEstado"
+                        placeholder="Digite o nome do estado"
+                        maxlength="65"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm">
+                      <label for="inputNumeroContato" class="form-label"
+                        >Numero de Contato *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputNumeroContato"
+                        placeholder="Digite o numero de contato"
+                        maxlength="15"
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <label for="inputEmail" class="form-label">E-mail</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        placeholder="Digite o seu e-mail"
+                        maxlength="65"
+                      />
                     </div>
                   </div>
                   <button type="submit" class="btn btn-primary">
